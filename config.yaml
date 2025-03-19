@@ -1,0 +1,8 @@
+database:
+  url: "sqlite:///sample.db"
+#  type: "postgresql"  # Change this to "mysql" if using MySQL etc...
+#  host: "localhost"
+#  name: "simple_shop"
+#  user: "simple_shop_admin"  # Optional if using environment variables
+#  password: "admin_password"  # Optional if using environment variables
+

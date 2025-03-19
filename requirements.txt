@@ -1,0 +1,4 @@
+faker      # faker: Generates fake data.
+sqlalchemy # sqlalchemy: ORM for interacting with the PostgreSQL database.
+pyyaml     # pyyaml: Reads the YAML configuration file.
+#psycopg2  # psycopg2: PostgreSQL database adapter for Python.
