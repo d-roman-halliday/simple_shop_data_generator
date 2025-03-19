@@ -5,6 +5,21 @@ This is meant as an example for an approach, rather than a general tool (althoug
 ## Configuration
 Use the [config.yaml](config.yaml) File for connections, either giving a whole URL, or by configureing the various required parts.
 
+## View data
+```
+SELECT sci.id,
+       sci.cart_id,
+       sc.created_at,
+       p.name          AS product_name,
+       c.name          AS customer_name
+  FROM shopping_cart_items sci  
+    INNER JOIN shopping_carts sc ON sci.cart_id = sc.id
+    INNER JOIN products        p ON p.id = sci.product_id   
+    INNER JOIN customers       c ON sc.customer_id = c.id
+;
+```
+
+
 # Testing & Configuration Notes
 
 ## Executed in Ubuntu
